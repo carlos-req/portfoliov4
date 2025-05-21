@@ -13,15 +13,20 @@ interface Props {
 }
 
 export async function generateMetadata(
-  { params }: Props,
+  {
+    params,
+  }: {
+    params: Promise<{ slug: string } | { [key: string]: string }>;
+  },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const payload = await initPayload();
+  const { slug } = await params;
   const posts = await payload.find({
     collection: "posts",
     where: {
       id: {
-        equals: params.slug,
+        equals: slug,
       },
     },
     depth: 1,
@@ -64,7 +69,11 @@ export async function generateMetadata(
   };
 }
 
-export default async function BlogPost({ params }: Props) {
+export default async function BlogPost({
+  params,
+}: {
+  params: Promise<{ slug: string } | { [key: string]: string }>;
+}) {
   const { slug } = await params;
   const payload = await initPayload();
 
