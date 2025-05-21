@@ -25,19 +25,24 @@ export default function AboutPage() {
           <div className="md:col-span-2 space-y-4">
             <p className="text-lg">
               Hi, I&apos;m Carlos Requena, a front end developer with 3+ years
-              of experience creating engaging web experiences. I specialize in
-              building modern, responsive websites and applications using the
-              latest technologies and best practices.
+              of experience turning ideas into engaging, responsive web
+              experiences. I&apos;m passionate about crafting clean, modern
+              websites and apps that not only look great but work seamlessly
+              across devices
             </p>
             <p>
-              My journey in web development began during the pandemic, where I
-              discovered my passion for creating stunning websites. Since then,
-              I&apos;ve worked with small businesses, agencies, and established
-              companies to deliver high quality solutions.
+              My journey into web development started during the pandemic, when
+              I stumbled into coding and quickly got hooked on the creative
+              process. Since then, I&apos;ve had the chance to work with a range
+              of clients, from small startups to growing agencies, helping bring
+              their visions to life on the web
             </p>
             <p>
-              Beyond development, I enjoy working out, playing MTG and creating
-              content that can provide some value to others.
+              Outside of developing, you&apos;ll usually find me at the gym,
+              playing Magic: The Gathering, or creating content to share what
+              I&apos;ve learned with others. I love connecting with people who
+              are just as excited about tech, creativity, and continuous
+              learning as I am.
             </p>
             <div className="flex gap-4 pt-4 justify-between md:justify-normal">
               <Button asChild className="w-full md:w-auto">

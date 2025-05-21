@@ -82,25 +82,15 @@ export const projects = [
     slug: "doubleccleaning",
   },
   {
-    title: "Portfolio ",
+    title: "Portfolio",
     description:
       "The first version of my portfolio website, showcasing my work and skills.",
-    image: "/images/project5.jpg",
-    tags: ["React Native", "Firebase", "Redux"],
-    demoUrl: "https://example.com",
-    repoUrl: "https://github.com",
+    image: "/images/portfolio.png",
+    tags: ["React", "Tailwind"],
+    demoUrl: "https://github.com/carlos-req/Portfolio-V2",
+    repoUrl: "https://github.com/carlos-req/Portfolio-V2",
     category: "personal",
     slug: "portfoliov1",
-  },
-  {
-    title: "coming soon",
-    description: "coming soon",
-    image: "/images/project4.jpg",
-    tags: ["React", "Node.js", "MongoDB"],
-    demoUrl: "/",
-    repoUrl: "https://github.com/carlos-req",
-    category: "personal",
-    slug: "comingsoon",
   },
 ];
 
@@ -202,8 +192,8 @@ export const testimonials = [
 ];
 
 export const clientLogos = [
-  { name: "BergFlowers", logo: "/logos/techstart.png" },
-  { name: "Forge Smoke", logo: "/logos/innovate.png" },
-  { name: "Double C Cleaning", logo: "/logos/growthlabs.png" },
-  { name: "M*CARBO", logo: "/logos/startupx.png" },
+  { name: "BergFlowers", logo: "/images/berg-logo.png" },
+  { name: "Forge Smoke", logo: "/images/forgelogo.png" },
+  { name: "Double C Cleaning", logo: "/images/doubleccleaninglogo.png" },
+  { name: "M*CARBO", logo: "/images/mcarbologo.jpg" },
 ];

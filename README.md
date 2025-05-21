@@ -40,4 +40,3 @@ For the blog functionality, this project integrates with Payload CMS. Follow the
 ## Deployment
 
 This project is configured for easy deployment on platforms like Vercel, Netlify, or GitHub Pages.
-# portfoliov4

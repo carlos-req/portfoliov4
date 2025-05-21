@@ -42,7 +42,7 @@ export default async function LatestPosts() {
               )}
             </div>
             <CardContent className="p-6">
-              <Badge className="mb-2">{post.tag}</Badge>
+              <Badge className="mb-2 capitalize">{post.tag}</Badge>
               <h3 className="text-xl font-semibold mb-2">{post.title}</h3>
               <p className="text-muted-foreground mb-4">
                 {getPlainTextFromRichText(post.content).slice(0, 75)}...

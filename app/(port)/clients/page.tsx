@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight, Quote, Star, StarHalf } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Link from "next/link";
 import { clientLogos, testimonials } from "@/data/index.js";
+import Image from "next/image";
 
 export default function ClientsPage() {
   const [activeTestimonial, setActiveTestimonial] = useState(0);
@@ -69,7 +70,12 @@ export default function ClientsPage() {
               className="aspect-square bg-card rounded-xl flex items-center justify-center p-4 border transition-all hover:shadow-md"
             >
               <div className="text-lg font-medium text-center text-muted-foreground">
-                {client.name}
+                <Image
+                  src={client.logo}
+                  alt={client.name}
+                  width={100}
+                  height={100}
+                />
               </div>
             </div>
           ))}

@@ -107,7 +107,7 @@ export default function BlogClient({ initialPosts }: Props) {
               )}
               <CardContent className="p-6">
                 <div className="space-y-4">
-                  <Badge>{post.tag}</Badge>
+                  <Badge className="capitalize">{post.tag}</Badge>
                   <div className="space-y-2">
                     <Link href={`/blog/${post.id}`} className="hover:underline">
                       <h3 className="text-xl font-semibold">{post.title}</h3>
