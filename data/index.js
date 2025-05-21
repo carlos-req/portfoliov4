@@ -87,7 +87,7 @@ export const projects = [
       "The first version of my portfolio website, showcasing my work and skills.",
     image: "/images/portfolio.png",
     tags: ["React", "Tailwind"],
-    demoUrl: "https://github.com/carlos-req/Portfolio-V2",
+    demoUrl: "https://carlosrequena.netlify.app/",
     repoUrl: "https://github.com/carlos-req/Portfolio-V2",
     category: "personal",
     slug: "portfoliov1",
