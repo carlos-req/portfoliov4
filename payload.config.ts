@@ -1,6 +1,6 @@
 import sharp from "sharp";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
-import { postgresAdapter } from "@payloadcms/db-postgres";
+import { vercelPostgresAdapter } from "@payloadcms/db-vercel-postgres";
 import { buildConfig } from "payload";
 import { Posts } from "./app/collections/Posts";
 import { Projects } from "./app/collections/Projects";
@@ -18,11 +18,7 @@ export default buildConfig({
   secret: process.env.PAYLOAD_SECRET || "",
   // Whichever Database Adapter you're using should go here
   // Mongoose is shown as an example, but you can also use Postgres
-  db: postgresAdapter({
-    pool: {
-      connectionString: process.env.DATABASE_URI || "",
-    },
-  }),
+  db: vercelPostgresAdapter(),
   plugins: [
     s3Storage({
       collections: {
