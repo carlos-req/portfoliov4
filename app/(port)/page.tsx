@@ -15,7 +15,7 @@ export default function Home() {
       <section className="flex flex-col-reverse md:flex-row md:items-center justify-between py-8 md:py-20 gap-8">
         <div className="space-y-4 md:w-2/3">
           <Badge variant="outline" className="px-3 py-1">
-            Frontend Developer
+            Full Stack Developer
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
             Crafting digital <span className="text-primary">experiences</span>{" "}

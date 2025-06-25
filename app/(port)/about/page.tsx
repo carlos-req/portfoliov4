@@ -23,26 +23,25 @@ export default function AboutPage() {
         <h1 className="text-4xl font-bold">About Me</h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
           <div className="md:col-span-2 space-y-4">
-            <p className="text-lg">
-              Hi, I&apos;m Carlos Requena, a front end developer with 3+ years
-              of experience turning ideas into engaging, responsive web
-              experiences. I&apos;m passionate about crafting clean, modern
-              websites and apps that not only look great but work seamlessly
-              across devices
+            <p>
+              Hi, I&apos;m Carlos Requena 👋, a full stack developer with 3+
+              years of experience turning ideas into engaging, responsive web
+              experiences and web applications. I&apos;m passionate about
+              crafting clean, modern websites and apps that not only look great
+              but work seamlessly across devices
             </p>
             <p>
-              My journey into web development started during the pandemic, when
-              I stumbled into coding and quickly got hooked on the creative
-              process. Since then, I&apos;ve had the chance to work with a range
-              of clients, from small startups to growing agencies, helping bring
-              their visions to life on the web
+              My journey into developing started during the pandemic, when I
+              stumbled into coding and quickly got hooked on the creative
+              process.I&apos;ve had the chance to work with a range of clients,
+              from small startups to big businesses, helping bring their visions
+              to life on the web
             </p>
             <p>
               Outside of developing, you&apos;ll usually find me at the gym,
-              playing Magic: The Gathering, or creating content to share what
-              I&apos;ve learned with others. I love connecting with people who
-              are just as excited about tech, creativity, and continuous
-              learning as I am.
+              playing games, or creating content to share what I&apos;ve learned
+              with others. I love connecting with people who are just as excited
+              about tech, creativity, and continuous learning as I am.
             </p>
             <div className="flex gap-4 pt-4 justify-between md:justify-normal">
               <Button asChild className="w-full md:w-auto">
