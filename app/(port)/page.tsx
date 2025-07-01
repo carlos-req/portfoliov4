@@ -10,9 +10,9 @@ import LatestPosts from "@/components/home/latest-posts";
 
 export default function Home() {
   return (
-    <div className="space-y-16 max-w-5xl mx-auto mt-4 md:mt-0">
+    <div className="space-y-16 max-w-5xl mx-auto md:mt-0">
       {/* Hero Section */}
-      <section className="flex flex-col-reverse md:flex-row md:items-center justify-between py-8 md:py-20 gap-8">
+      <section className="flex flex-col-reverse md:flex-row md:items-center justify-between  gap-8">
         <div className="space-y-4 md:w-2/3">
           <Badge variant="outline" className="px-3 py-1">
             Full Stack Developer

@@ -23,6 +23,7 @@ export const featuredProjects = [
     category: "client",
     featured: true,
     slug: "bergflowers",
+    type: "Branding & Web Development",
   },
   {
     title: "Forge Smoke",
@@ -34,6 +35,7 @@ export const featuredProjects = [
     repoUrl: "https://github.com",
     category: "client",
     slug: "forgesmokeshop",
+    type: "Web Development & Maintenance",
   },
   {
     title: "Double C Cleaning",
@@ -44,6 +46,7 @@ export const featuredProjects = [
     repoUrl: "https://github.com/carlos-req/cccleaning",
     category: "client",
     slug: "doubleccleaning",
+    type: "Branding & Web Development",
   },
 ];
 
@@ -51,7 +54,7 @@ export const projects = [
   {
     title: "Berg Flowers",
     description:
-      "A new website branding for a canabis flower company, featuring a modern design and user-friendly interface.",
+      "A new website branding and development for a canabis flower company, featuring a modern design and user-friendly interface.",
     image: "/images/bergflowers.png",
     tags: ["React", "NextJS", "Tailwind", "Shadcn"],
     demoUrl: "https://www.bergflowers.com/",
@@ -59,6 +62,7 @@ export const projects = [
     category: "client",
     featured: true,
     slug: "bergflowers",
+    type: "Branding & Web Development",
   },
   {
     title: "Forge Smoke",
@@ -70,6 +74,7 @@ export const projects = [
     repoUrl: "https://github.com",
     category: "client",
     slug: "forgesmokeshop",
+    type: "Web Development & Maintenance",
   },
   {
     title: "Double C Cleaning",
@@ -80,6 +85,7 @@ export const projects = [
     repoUrl: "https://github.com/carlos-req/cccleaning",
     category: "client",
     slug: "doubleccleaning",
+    type: "Branding & Web Development",
   },
   {
     title: "Portfolio",
@@ -91,6 +97,7 @@ export const projects = [
     repoUrl: "https://github.com/carlos-req/Portfolio-V2",
     category: "personal",
     slug: "portfoliov1",
+    type: "Branding & Web Development",
   },
 ];
 

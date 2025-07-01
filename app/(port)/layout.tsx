@@ -23,7 +23,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-screen">
             <SideNav />
-            <div className="flex-1 overflow-y-auto p-4 md:p-8 md:ml-64 transition-all duration-300">
+            <div className="flex-1 overflow-y-auto px-4 py-6 md:py-16 md:px-8 md:ml-64 transition-all duration-300">
               {children}
             </div>
           </div>

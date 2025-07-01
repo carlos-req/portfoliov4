@@ -58,79 +58,27 @@ export default function ProjectsPage() {
       </div>
 
       {filteredProjects.length > 0 ? (
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 font-mono">
           {filteredProjects.map((project, i) => (
-            <Card
-              key={i}
-              className="overflow-hidden transition-all hover:shadow-md"
-            >
-              <div className="aspect-video bg-muted flex items-center justify-center text-muted-foreground">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={400}
-                  height={300}
-                  className="object-cover w-full h-full "
-                />
-              </div>
-              <CardContent className="p-6">
-                <div className="space-y-4">
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-semibold">{project.title}</h3>
-                    <p className="text-muted-foreground line-clamp-2">
-                      {project.description}
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <Badge key={tag} variant="secondary">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="flex items-center gap-2 pt-2 flex-wrap">
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="h-8 px-2"
-                      asChild
-                    >
-                      <a
-                        href={project.demoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="h-4 w-4 " />
-                      </a>
-                    </Button>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="h-8 px-2"
-                      asChild
-                    >
-                      <a
-                        href={project.repoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="h-4 w-4" />
-                      </a>
-                    </Button>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="h-8 px-2 "
-                      asChild
-                    >
-                      <Link href={`/projects/${project.slug}`}>
-                        Details <ArrowRight className="ml-1 h-4 w-4" />
-                      </Link>
-                    </Button>
-                  </div>
+            <Link key={i} href={`/projects/${project.slug}`}>
+              <div className="flex flex-col items-start gap-2 ">
+                <div className=" flex flex-col items-center justify-center text-muted-foreground">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={400}
+                    height={300}
+                    className="object-cover w-full h-full aspect-video hover:brightness-75 transition-all duration-300 ease-in-out"
+                  />
                 </div>
-              </CardContent>
-            </Card>
+                <section className="text-xs tracking-tight">
+                  <h2 className=" pb-1 uppercase">{project.title}</h2>
+                  <p className="text-xs uppercase text-muted-foreground">
+                    {project.type}
+                  </p>
+                </section>
+              </div>
+            </Link>
           ))}
         </div>
       ) : (
