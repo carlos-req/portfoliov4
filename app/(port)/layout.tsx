@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import SideNav from "@/components/layout/side-nav";
 import { Toaster } from "@/components/ui/toaster";
+import MotionLayout from "./motion-layout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,9 +24,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-screen">
             <SideNav />
-            <div className="flex-1 overflow-y-auto px-4 py-6 md:py-16 md:px-8 md:ml-64 transition-all duration-300">
-              {children}
-            </div>
+            <MotionLayout>{children}</MotionLayout>
           </div>
           <Toaster />
         </ThemeProvider>
