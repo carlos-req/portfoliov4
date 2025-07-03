@@ -4,22 +4,15 @@ import { Metadata, ResolvingMetadata } from "next";
 import { projects } from "@/data/index.js";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 import Link from "next/link";
-import { Download } from "lucide-react";
 
-interface Props {
-  params: {
-    slug: string;
-  };
-}
+type Props = {
+  params: Promise<{ slug: string }>;
+};
 
 export async function generateMetadata(
-  {
-    params,
-  }: {
-    params: Promise<{ slug: string }>;
-  },
+  { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { slug } = await params;
@@ -27,21 +20,22 @@ export async function generateMetadata(
   const project = projects.find((p) => p.slug === slug);
 
   return {
-    title: project.title,
-    description: project.description?.slice(0, 160) || "Check out this project",
+    title: project?.title,
+    description:
+      project?.description?.slice(0, 160) || "Check out this project",
     openGraph: {
-      title: project.title,
+      title: project?.title,
       description:
-        project.description?.slice(0, 160) || "Check out this project",
+        project?.description?.slice(0, 160) || "Check out this project",
       authors: ["Carlos Requena"],
-      images: project.image ? [project.image] : ["https://carlos-req.com/"], // Default image if none is provided
+      images: project?.image ? [project.image] : ["https://carlos-req.com/"], // Default image if none is provided
     },
     twitter: {
       card: "summary_large_image",
-      title: project.title,
+      title: project?.title,
       description:
-        project.description?.slice(0, 160) || "Check out this project",
-      images: project.image ? [project.image] : [],
+        project?.description?.slice(0, 160) || "Check out this project",
+      images: project?.image ? [project.image] : [],
     },
   };
 }

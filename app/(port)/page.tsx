@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Download } from "lucide-react";
 import Link from "next/link";
 import FeaturedProjects from "@/components/home/featured-projects";
